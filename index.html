@@ -1,0 +1,88 @@
+ <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UrbanPlug HN</title>
+    <meta property="og:title" content="UrbanPlug HN">
+    <meta property="og:site_name" content="UrbanPlug HN">
+    <meta property="og:description" content="Tecnología, accesorios, moda y novedades en UrbanPlug HN.">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <div class="navbar-top">
+            <div class="logo">
+                <i class="fa-solid fa-gem"></i> UrbanPlug HN
+            </div>
+            <div class="social-links">
+                <a id="share-link" href="#" class="share-btn">Compartir</a>
+                <a href="https://wa.me/50495800770" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+        </div>
+        
+        <div class="hero-search">
+            <h1>Tecnología, estilo y novedades</h1>
+            <p>Encuentra tus próximos favoritos en UrbanPlug HN.</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="catalog-tools" aria-label="Buscar productos">
+            <label class="search-container">
+                <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+                <input type="search" id="searchInput" placeholder="Buscar productos" aria-label="Buscar productos">
+            </label>
+            <label class="category-select">
+                <span class="sr-only">Filtrar por categoría</span>
+                <select id="categoryFilter" aria-label="Filtrar por categoría">
+                    <option value="all">Todas las categorías</option>
+                </select>
+            </label>
+            <p id="product-count" class="product-count" aria-live="polite"></p>
+        </section>
+
+        <section id="product-grid" class="product-grid" aria-live="polite" aria-label="Catálogo de productos">
+        </section>
+
+        <section class="fulfillment" aria-label="Opciones de pago y entrega">
+            <div>
+                <i class="fa-solid fa-hand-holding-dollar" aria-hidden="true"></i>
+                <span><strong>Pago contra entrega</strong><small>Pagas al recibir tu pedido</small></span>
+            </div>
+            <div>
+                <i class="fa-solid fa-handshake" aria-hidden="true"></i>
+                <span><strong>Entrega personal</strong><small>Coordinamos contigo por WhatsApp</small></span>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="contact-info">
+                <h3>Contáctanos</h3>
+                <p>Consulta disponibilidad de entrega por WhatsApp</p>
+                <a href="https://wa.me/50495800770" class="whatsapp-main-btn">
+                    <i class="fa-brands fa-whatsapp"></i> Chatear en WhatsApp
+                </a>
+            </div>
+            <div class="instagram-qr">
+                <h3>Síguenos en Instagram</h3>
+                <a href="https://www.instagram.com/luxury_hn1/" target="_blank" rel="noopener noreferrer"
+                   aria-label="Abrir Instagram de Luxury HN">
+                    <img src="fotos frontales/instagram-qr.png" alt="Código QR de Instagram: LUXURY_HN1">
+                </a>
+                <p>Escanea el código para ver novedades</p>
+            </div>
+        </div>
+        <div class="copyright">
+            &copy; 2026 UrbanPlug HN
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
